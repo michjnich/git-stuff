@@ -1,3 +1,18 @@
 [alias]
+    # Convenience shorteners
+    c = commit -m
+    s = status -sb
+    d = diff
+    co = checkout
+    br = branch
+    last = log -1 HEAD
+    cane = commit --amend --no-edit
+    lo = log --oneline -n 10
+    last = log -1 HEAD --stat
+    pr = pull --rebase
+
     # `git wip` will show all open branches along with info on how long they have been open
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+    
+    # git se <search string> searches within all commits
+    se = !git rev-list --all | xargs git grep -F
