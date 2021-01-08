@@ -14,5 +14,9 @@
     # `git wip` will show all open branches along with info on how long they have been open
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     
-    # git se <search string> searches within all commits
+    # `git se <search string>` searches within all commits
     se = !git rev-list --all | xargs git grep -F
+    
+    # `git ahead` shows all unpushed commits to main
+    ahead = log --stat origin/main..HEAD
+    
