@@ -1,3 +1,23 @@
+# Colours that work for my colour-blindness!!
+[color]
+        branch = auto
+        diff = auto
+        status = auto
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        meta = yellow bold
+        frag = yellow reverse
+        old = cyan bold
+        new = green bold
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+
+# Handy command aliases
 [alias]
     # Convenience shorteners
     c = commit -m
