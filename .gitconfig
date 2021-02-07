@@ -39,3 +39,5 @@
     # `git ahead` shows all unpushed commits to main
     ahead = log --stat origin/main..HEAD
     
+    # `git behind` shows all unmerged changes that have been fetched from origin/main
+    behind = log main..origin/main
