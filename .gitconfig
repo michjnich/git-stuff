@@ -29,6 +29,7 @@
     lo = log --oneline -n 10
     last = log -1 HEAD --stat
     pr = pull --rebase
+    mf = merge --ff-only
 
     # `git wip` will show all open branches along with info on how long they have been open
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
